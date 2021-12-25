@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vanilla Expense Tracker</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <h1>Expense Tracker</h1>
+
+        <form id="form">
+            <div id="form-row-1">
+                <div id="amount-div">
+                    Amount: <br />
+                    $<input
+                        id="amount"
+                        class="input"
+                        type="number"
+                        style="text-align: center"
+                        required
+                    />
+                    <p></p>
+                </div>
+                <div id="where-div">
+                    Item: <br />
+                    <input
+                        id="place"
+                        class="input"
+                        type="text"
+                        placeholder="item"
+                        style="text-align: center"
+                        required
+                    />
+                    <p></p>
+                </div>
+            </div>
+
+            <div id="form-row-2">
+                <div id="date-div">
+                    Date: <br />
+                    <input type="date" id="date" class="input" required />
+                    <p></p>
+                </div>
+                <div id="type-buttons" style="text-align: left">
+                    Payee Name: <br />
+
+                    <input checked id="radio-cash" type="radio" class="input" name="payment-type" value="Akshay" />
+                    <label for="radio-Akshay">Akshay</label> <br />
+                    <input id="radio-credit" type="radio" class="input" name="payment-type" value="Amar" />
+                    <label for="radio-credit">Amar</label><br />
+                    <input id="radio-debit" type="radio" class="input" name="payment-type" value="Uttam" />
+                    <label for="radio-debit">Uttam</label> <br />
+                    <input id="radio-crypto" type="radio" class="input" name="payment-type" value="Amit" />
+                    <label for="radio-crypto">Amit</label> <br />
+                    <input id="radio-crypto" type="radio" class="input" name="payment-type" value="Akash" />
+                    <label for="radio-crypto">Akash</label> <br />
+                    <input id="radio-crypto" type="radio" class="input" name="payment-type" value="Avinash" />
+                    <label for="radio-crypto">Avinash</label> <br />
+                    <input id="radio-crypto" type="radio" class="input" name="payment-type" value="Swapnil" />
+                    <label for="radio-crypto">Swapnil</label> <br />
+                    <input id="radio-crypto" type="radio" class="input" name="payment-type" value="Kailas" />
+                    <label for="radio-crypto">Kailas</label> <br />
+                    <input id="radio-crypto" type="radio" class="input" name="payment-type" value="Ravindra" />
+                    <label for="radio-crypto">Ravindra</label> <br />
+                    <p></p>
+                </div>
+            </div>
+
+            <div id="buttons">
+                <input class="input" id="submit" type="button" value="Add Expense" />
+                <input id="remove-all" type="button" value="Remove All Expenses" />
+                <input id="clear" type="button" value="Clear Form" />
+            </div>
+        </form>
+        <p></p>
+
+        <table id="table"></table>
+
+        <table id="table1"></table>
+
+        <script src="index.js"></script>
+    </body>
+</html>
